@@ -1,0 +1,25 @@
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
+import { KopButton } from "shared/components";
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text>I'm customer app</Text>
+      <KopButton
+        title="Press me"
+        onPress={() => console.log("Button pressed")}
+      />
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
+  },
+});
