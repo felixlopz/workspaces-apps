@@ -1,9 +1,20 @@
 {
-  "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "strict": true
+    "target": "ES6", // Target JavaScript version
+    "module": "ESNext", // Use ES modules
+    "jsx": "react-native", // Support React Native JSX
+    "strict": true, // Enable strict type-checking
+    "esModuleInterop": true, // Enable ES module interop
+    "skipLibCheck": true, // Skip library checks
+    "forceConsistentCasingInFileNames": true, // Ensure consistent file casing
+    "baseUrl": ".", // Base directory for path resolution
+    "moduleResolution": "node",
+    "paths": {
+      "#/*": ["./src/*"] // Path alias for `#`
+    },
+    "outDir": "./dist", // Output directory for compiled files
+    "rootDir": "./src" // Root directory for source files
   },
-  "paths": {
-    "#/*": ["./*"]
-  }
+  "include": ["src/**/*"], // Include all files in `src`
+  "exclude": ["node_modules", "dist"] // Exclude `node_modules` and `dist`
 }

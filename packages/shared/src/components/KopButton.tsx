@@ -7,7 +7,7 @@ import {
 } from "react-native";
 import { colors, fonSize } from "../constants/tokens";
 
-interface KopButtonProps {
+export interface KopButtonProps {
   title: string;
   onPress: (event: GestureResponderEvent) => void;
   disabled?: boolean;

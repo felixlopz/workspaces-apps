@@ -1,9 +1,16 @@
 {
   "name": "@kopcenter/shared",
   "version": "1.0.0",
+  "main": "src/index.ts",
   "scripts": {},
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "description": ""
+  "license": "",
+  "description": "",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "react-native": "^0.78.1"
+  }
 }
