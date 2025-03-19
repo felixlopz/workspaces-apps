@@ -1,5 +1,5 @@
 {
-  "name": "shopper",
+  "name": "@kopcenter/shopper",
   "license": "0BSD",
   "version": "1.0.0",
   "main": "index.ts",
@@ -7,10 +7,13 @@
     "start": "expo start",
     "android": "expo run:android",
     "ios": "expo run:ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "build": "eas build",
+    "eas": "eas"
   },
   "dependencies": {
     "expo": "~52.0.39",
+    "expo-application": "^6.0.2",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
     "react-native": "0.76.7"

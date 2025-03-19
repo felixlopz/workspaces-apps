@@ -1,5 +1,5 @@
 {
-  "name": "kop-apps",
+  "name": "@kopcenter/monolith",
   "version": "1.0.0",
   "private": true,
   "workspaces": [
@@ -11,10 +11,14 @@
     "customer:ios": "cd apps/customer/ios && pod install && cd .. && watchman watch-del-all && npx expo run:ios",
     "customer:android": "cd apps/customer && expo run:android",
     "customer:start": "cd apps/customer && expo start",
+    "customer:eas": "bun run --cwd apps/customer eas",
+    "customer:build": "bun run --cwd apps/customer build",
     "shopper:deep-i": "cd apps/shopper bun i && npx expo prebuild && cd ios && pod install && cd ..",
     "shopper:ios": "cd apps/shopper/ios && pod install && cd .. && watchman watch-del-all && npx expo run:ios",
     "shopper:android": "cd apps/shopper && expo run:android",
-    "shopper:start": "cd apps/shopper && expo start"
+    "shopper:start": "cd apps/shopper && expo start",
+    "shopper:eas": "bun run --cwd apps/shopper eas",
+    "shopper:build": "bun run --cwd apps/shopper build"
   },
   "keywords": [],
   "author": "",
