@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { KopButton } from "shared/components";
+import { KopButton } from "@kopcenter/shared";
 
 export default function App() {
   return (
